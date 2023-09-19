@@ -20,21 +20,21 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: whitesmoke ;
     width: 320px;
-    height: 500px;
+    height: 510px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login >div#imagem{
     display: block;
-     background: #A68F97  url(../imagem/mulher-jovem-exercitar-condicao-fisica.jpg) no-repeat;
+    background: #A68F97  url(../imagem/mulher-jovem-exercitar-condicao-fisica.jpg) no-repeat;
      background-size: cover;
-     height: 225px;
+     height: 200px;
 }
 section#login > div#form{
     display: block;
@@ -52,24 +52,48 @@ form > div.campo{
     padding: 5px 0px;
     display: block;
     width: 100%;
-    height: 30px;
-    background-color:#cbc6c695;
+    height: 40px;
+    background-color: #eabfbf95;
 }
-div.campo > span {
-    color: #a5818d;
-    font-size: 2em;
-    width: 30px;
-    padding: 5px;
-}
-div.campo > input {
-    background-color: #eed2e0b4;
-    font-size: 1em;
 
-}
+   div.campo > i {
+    color:#9e4765;
+    font-weight: bolder;
+    border-radius: 8px;
+   } 
+form >  div.campo > input {
+    background-color: #c8a3a395;
+    font-size: 1em;
+    width: calc(99% - 44px);
+    height: 40px;
+    border: 0px;
+    border-radius: 8px;
+    transform: translateY(-6px);
+
+
+    
+ }
+ div.campo > input:focus-within {
+    background-color: white;
+ }
+
+
+ 
+    
+
+
+
+
+   
+
+
+   
+
+
 div.campo label {
     display: none;
 }
-form > input [type=submit]{
+form > .submit{
     display: block;
     font-size: 1em;
 }
@@ -79,7 +103,7 @@ form > input[type=submit]{
     width: 100%;
     background-color: #cbc6c695;
     color: rgb(112, 106, 106);
-    height: 30px;
+    height: 40px;
     border: none;
     border-radius: 5px;
     padding-top: 5px;
@@ -87,16 +111,16 @@ form > input[type=submit]{
     cursor: pointer;
 }
 form > input[type=submit]:hover{
- background-color: #a68f97a3;
+   background-color:  #c8a3a395;
 }
 form > a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
     width: 100%;
-    height: 30px;
+    height: 40px;
     text-decoration: none;
-    background-color: #cbc6c695;
+    
     border-radius: 5px;
 }
     form > a.botao > span{
